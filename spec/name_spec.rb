@@ -1,7 +1,16 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "RubyFakerJapanese" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+describe Faker::Japanese::Name do
+  before do
+    Faker::Japanese::Name
+  end
+
+  it "#name" do
+  end
+
+  it "#first_name" do
+  end
+
+  it "#last_name" do
   end
 end
