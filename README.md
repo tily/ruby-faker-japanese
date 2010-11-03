@@ -1,4 +1,4 @@
-Faker-Japanese
+Faker::Japanese
 ==============
 
 概要
