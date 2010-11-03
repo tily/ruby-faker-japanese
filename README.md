@@ -11,7 +11,7 @@ Faker-Japanese
 
 ### 名前の生成
 
- * #name
+ * フルネーム
 
         20.times do
           name = Faker::Japanese::Name.name
@@ -42,7 +42,7 @@ Faker-Japanese
         大重 栄四郎 (オオシゲ エイシロウ)
 
 
- * #first_name, #last_name
+ * 苗字と名前
 
         20.times do
           first_name = Faker::Japanese::Name.first_name
