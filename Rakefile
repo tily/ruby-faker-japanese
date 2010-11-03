@@ -5,11 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "ruby-faker-japanese"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Faker in Japanese}
+    gem.description = %Q{Faker in Japanese}
     gem.email = "tily05@gmail.com"
     gem.homepage = "http://github.com/tily/ruby-faker-japanese"
     gem.authors = ["tily"]
+    gem.add_dependency "faker"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
@@ -42,4 +43,9 @@ Rake::RDocTask.new do |rdoc|
   rdoc.title = "ruby-faker-japanese #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
+end
+
+desc 'generate Faker::Japanese::Name class file.'
+task :generate do
+  sh 'ruby script/generate.rb'
 end
