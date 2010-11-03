@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "ruby-faker-japanese"
+    gem.name = "faker-japanese"
     gem.summary = %Q{Faker in Japanese}
     gem.description = %Q{Faker in Japanese}
     gem.email = "tily05@gmail.com"
@@ -40,7 +40,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "ruby-faker-japanese #{version}"
+  rdoc.title = "faker-japanese #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
