@@ -11,12 +11,16 @@ Faker-Japanese
 
 ### 名前の生成
 
- * フルネーム
+ * #name
+
+   * ソース
 
         20.times do
           name = Faker::Japanese::Name.name
           puts "#{name} (#{name.yomi})"
         end
+
+   * 実行結果
  
         直江津 儀子 (ナオエツ ノリコ)
         桜本 ひさゑ (サクラモト ヒサヱ)
@@ -39,13 +43,17 @@ Faker-Japanese
         水科 史 (ミズシナ フミ)
         大重 栄四郎 (オオシゲ エイシロウ)
 
- * 苗字と名前
+ * #first_name, #last_name
+
+  * ソース
 
         20.times do
           first_name = Faker::Japanese::Name.first_name
           last_name = Faker::Japanese::Name.last_name
           puts "姓：#{last_name}\t名：#{first_name}"
         end
+
+  * 実行結果
 
         姓：高垣        名：芳人
         姓：尾関        名：きね子
