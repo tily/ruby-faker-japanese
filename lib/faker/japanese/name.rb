@@ -32035,7 +32035,7 @@ module Faker
 
       [:first_name, :last_name].each do |m|
         define_method m do
-          chosen = instance_variable_get("@#{m}s").rand
+          chosen = rand(instance_variable_get("@#{m}s"))
           name = chosen[0]
           set_yomi(name, chosen[1])
           name
@@ -32045,6 +32045,10 @@ module Faker
       def set_yomi(name, yomi)
         name.instance_variable_set('@yomi', yomi)
         def name.yomi; @yomi end
+      end
+
+      def rand(array)
+        array[Kernel.rand(array.size)]
       end
     end
   end

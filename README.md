@@ -80,7 +80,6 @@ Faker::Japanese
 要件
 ----
 
- * faker
  * naist-jdic-utf8 (ソースからインストールする場合のみ)
 
 

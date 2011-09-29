@@ -10,7 +10,6 @@ begin
     gem.email = "tily05@gmail.com"
     gem.homepage = "http://github.com/tily/ruby-faker-japanese"
     gem.authors = ["tily"]
-    gem.add_dependency "faker"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
