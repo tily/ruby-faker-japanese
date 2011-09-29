@@ -1,4 +1,4 @@
-
+# -*- coding:utf-8 -*
 module Faker
   module Japanese
     module Name
