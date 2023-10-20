@@ -13,7 +13,7 @@ Faker::Japanese
 
  * フルネーム
 
-        require 'faker/japanese`
+        require "faker/japanese"
 
         20.times do
           name = Faker::Japanese::Name.name
@@ -45,6 +45,8 @@ Faker::Japanese
 
 
  * 苗字と名前
+
+        require "faker/japanese"
 
         20.times do
           first_name = Faker::Japanese::Name.first_name
