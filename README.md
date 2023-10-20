@@ -13,6 +13,8 @@ Faker::Japanese
 
  * フルネーム
 
+        require 'faker/japanese`
+
         20.times do
           name = Faker::Japanese::Name.name
           puts "#{name} (#{name.yomi})"
